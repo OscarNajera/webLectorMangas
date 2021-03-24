@@ -1,13 +1,23 @@
 html{
 	font-size: 62.5%;
 	box-sizing: border-box;
+	background-color: #222;
 }
 *,*:before,*:after{
 	box-sizing: inherit;
 	margin: 0;
 }
-
-.contrnedor{
-	width: 80%;
+.centrado{
 	margin: 0 auto;
+	text-align: center;
+}
+#contenedor{
+	width: 80%;
+ 
+}
+
+#contenedor img{
+	width: 80%;
+
+
 }

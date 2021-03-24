@@ -1,0 +1,7 @@
+en la carpeta donde descomprimiste los archivos
+mete lai imagenes que quieras visualizar en la carpeta img
+si no existe creala
+
+Al abrir el archivo index.html
+precionar examinar y selecciona las imagenes preciona aceptar y
+posteriormente precionamostrar
