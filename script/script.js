@@ -1,18 +1,29 @@
 
-var fileVal=document.getElementById("files").files;
-var x=document.getElementById("x");
-
-//alert(fileVal.value);
-
-x.addEventListener("click", ver );
+var fileVal=document.getElementById("files").files; //lectura de ficheros
+var btn=document.getElementById("btn");  //etiqueta boton
+var contenedor=document.getElementById("contenedor");//contenedor donde se mostraran las imagenes
 
 
-function ver() {
+ 
+btn.addEventListener("click", ver );  //al precionar el boton se mostraran las imagenes
+
+
+function ver() {  //funcion que recorrera las imagenes y las mostrara
   let contenido="";
-  for(let i=0;i<fileVal.length;i++){
-    contenido +=fileVal[i].name+"\n";
 
+  for(let i=0;i<fileVal.length;i++){
+      let imgtemporal=fileVal[i].name;
+      insetar(imgtemporal);
+  
   }
-  alert(contenido );
 
 }
+
+function insetar(ximg) {
+  //alert(ximg);
+  let img= document.createElement("img");
+  img.setAttribute("src", "img/"+ximg)
+  contenedor.appendChild(img);
+
+}
+ 
